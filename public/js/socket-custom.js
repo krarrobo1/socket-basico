@@ -1,7 +1,15 @@
+/*
+ * Client
+ */
+
+
 var socket = io();
+
+// Notifica cuando se ha conectado al servidor, para estar pendiente de cambios
 socket.on('connect', function() {
     console.log('Conectado al servidor');
 });
+
 // Escuchar eventos
 socket.on('disconnect', function() {
     console.log('Perdimos coneccion con el servidor');

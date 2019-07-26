@@ -1,5 +1,12 @@
+/*
+ * Server
+ */
+
 const { io } = require('../server');
 
+// Notifica cuando un cliente se ha conectado.
+
+// client contiene toda la informacion acerca del cliente.
 io.on('connection', (client) => {
     console.log('Usuario conectado');
 

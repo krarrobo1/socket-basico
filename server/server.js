@@ -7,6 +7,7 @@ const path = require('path');
 
 const app = express();
 
+// Creamos servidor + express config
 let server = http.createServer(app);
 
 const publicPath = path.resolve(__dirname, '../public');
